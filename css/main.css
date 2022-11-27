@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+:root {
+  font-size: 100%;
+}
+html {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  overflow: hidden;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.hoek {
+  width: 7rem;
+  height: 16rem;
+  background-color: #add8e6a6;
+  position: absolute;
+  right: -1rem;
+  top: -7rem;
+  transform: rotate(-45deg);
+}
+.hoek2 {
+  width: 7rem;
+  height: 33rem;
+  background-color: #add8e6a6;
+  position: absolute;
+  right: 10rem;
+  top: -18rem;
+  transform: rotate(100deg);
+}
+.hoek3 {
+  width: 100%;
+  height: 38rem;
+  background-color: #ade6bba6;
+  position: absolute;
+  right: 9rem;
+  bottom: -34rem;
+  transform: rotate(-167deg);
+}
+.hoek4 {
+  width: 100%;
+  height: 38rem;
+  background-color: #ade6bba6;
+  position: absolute;
+  right: -6rem;
+  bottom: -35rem;
+  transform: rotate(170deg);
+}
+header {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  width: 7rem;
+}
+.tand1 {
+  position: relative;
+  right: -0.5rem;
+  animation-name: one;
+  animation-timing-function: initial;
+  animation-duration: 0.5s;
+}
+.tand2 {
+  position: relative;
+  z-index: 1;
+  animation-name: two;
+  animation-timing-function: initial;
+  animation-duration: 3s;
+}
+.tand3 {
+  position: relative;
+  right: 0.5rem;
+  animation-name: three;
+  animation-timing-function: initial;
+  animation-duration: 1s;
+}
+.text {
+  position: relative;
+  animation-name: four;
+  animation-timing-function: initial;
+  animation-duration: 5s;
+}
+h1 {
+  font-size: 3rem;
+  color: lightblue;
+  font-weight: bold;
+  margin: 1rem 0 0.5rem;
+}
+p {
+  font-size: 1.2rem;
+  color: lightseagreen;
+}
+.text2 {
+  margin-top: 5rem;
+}
+.text2 p {
+  color: black;
+  border-bottom: 2px solid lightblue;
+  padding: 1rem;
+}
+.naam p {
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
+  position: relative;
+  bottom: -5rem;
+  color: black;
+  animation-name: one;
+  animation-timing-function: initial;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  left: -100rem;
+  animation-fill-mode: both;
+}
+
+@keyframes one {
+  0% {
+    left: -100rem;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes two {
+  0% {
+    top: -100rem;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes three {
+  0% {
+    right: -100rem;
+  }
+  100% {
+    right: 0;
+  }
+}
+@keyframes four {
+  0% {
+    bottom: -100rem;
+  }
+  100% {
+    bottom: 0;
+  }
+}
