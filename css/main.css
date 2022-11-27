@@ -113,7 +113,7 @@ p {
   font-family: "Dancing Script", cursive;
   font-size: 3rem;
   position: relative;
-  bottom: -5rem;
+  bottom: -1rem;
   color: black;
   animation-name: one;
   animation-timing-function: initial;
