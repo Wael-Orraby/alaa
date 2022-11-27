@@ -5,49 +5,39 @@
 html {
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
-  overflow: hidden;
 }
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
-.hoek {
-  width: 7rem;
-  height: 16rem;
-  background-color: #add8e6a6;
+
+body::before {
+  content: "";
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background-color: lightblue;
   position: absolute;
-  right: -1rem;
-  top: -7rem;
-  transform: rotate(-45deg);
+  left: 0rem;
+  right: 0;
+  top: -1rem;
+  z-index: -1;
+  opacity: 0.3;
 }
-.hoek2 {
-  width: 7rem;
-  height: 33rem;
-  background-color: #add8e6a6;
+body::after {
+  content: "";
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background-color: lightgreen;
   position: absolute;
-  right: 10rem;
-  top: -18rem;
-  transform: rotate(100deg);
+  right: 0rem;
+  top: 40rem;
+  z-index: -1;
+  opacity: 0.3;
 }
-.hoek3 {
-  width: 100%;
-  height: 38rem;
-  background-color: #ade6bba6;
-  position: absolute;
-  right: 9rem;
-  bottom: -34rem;
-  transform: rotate(-167deg);
-}
-.hoek4 {
-  width: 100%;
-  height: 38rem;
-  background-color: #ade6bba6;
-  position: absolute;
-  right: -6rem;
-  bottom: -35rem;
-  transform: rotate(170deg);
-}
+
 header {
   height: 100vh;
   text-align: center;
@@ -69,14 +59,17 @@ header {
   right: -0.5rem;
   animation-name: one;
   animation-timing-function: initial;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
 }
 .tand2 {
   position: relative;
   z-index: 1;
   animation-name: two;
   animation-timing-function: initial;
-  animation-duration: 3s;
+  animation-duration: 1s;
+  top: -100rem;
+  animation-delay: 1s;
+  animation-fill-mode: both;
 }
 .tand3 {
   position: relative;
@@ -89,7 +82,10 @@ header {
   position: relative;
   animation-name: four;
   animation-timing-function: initial;
-  animation-duration: 5s;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  bottom: -100rem;
+  animation-fill-mode: both;
 }
 h1 {
   font-size: 3rem;
@@ -117,12 +113,57 @@ p {
   color: black;
   animation-name: one;
   animation-timing-function: initial;
-  animation-duration: 3s;
-  animation-delay: 3s;
+  animation-duration: 1s;
+  animation-delay: 2s;
   left: -100rem;
   animation-fill-mode: both;
 }
 
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+.work {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+.before {
+  width: 15rem;
+  text-align: center;
+  background-color: #2581c4;
+  padding: 1rem;
+}
+.before img {
+  width: 100%;
+  margin: 0.5rem 0;
+  border-radius: 1rem;
+}
+.before h2 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.before h3 {
+  font-size: 1.1rem;
+}
+.before p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: white;
+  line-height: 1.3rem;
+}
+.after {
+  background-color: lightseagreen;
+  margin-left: 0.1rem;
+}
 @keyframes one {
   0% {
     left: -100rem;
